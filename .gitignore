@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+/data/
+/state/
+/logs/
+/coverage/
+.DS_Store
