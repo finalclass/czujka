@@ -1,0 +1,18 @@
+{
+  "forgejo": {
+    "https://git.example.com": {
+      "profile": "forgejo",
+      "defaultOwner": "example-owner"
+    }
+  },
+  "zoho": {
+    "zoho": {
+      "profile": "zoho"
+    }
+  },
+  "zulip": {
+    "zulip": {
+      "profile": "zulip"
+    }
+  }
+}

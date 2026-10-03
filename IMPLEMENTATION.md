@@ -90,7 +90,10 @@ README określa produkt, nie narzuca konkretnego endpointu ani biblioteki.
 - **Forgejo:** rozwiąż pełne `owner/repo`; sprawdzaj wskazane issue. Krótka
   nazwa wymaga jawnego mapowania właściciela w konfiguracji. Zabezpiecz
   odróżnienie stanu zamkniętego od błędu odczytu i respektuj ograniczenie
-  pollingu z README.
+  pollingu z README. Dla `forgejo-pull-activity` potwierdź, że numer jest pull
+  requestem, czytaj jego oś czasu i stan nowych recenzji. Nie przesuwaj kursora,
+  gdy strona albo stan recenzji są niekompletne. Zastana oś czasu jest punktem
+  startowym. Semantyka zdarzeń jest w README.
 - **Zoho:** wykorzystaj IMAP z TLS i odczyt bez zmiany flag wiadomości albo
   zweryfikowane API Zoho z taką samą semantyką. Dla IMAP kursor musi uwzględniać
   UIDVALIDITY i UID. Zmiana UIDVALIDITY wymaga widocznej diagnostyki i ustalenia

@@ -1,0 +1,15 @@
+[Unit]
+Description=Czujka — obserwacja Forgejo, Zoho i Zulip oraz wybudzanie sesji T3
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/czujka/bin/czujka daemon
+WorkingDirectory=%h/czujka
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+Restart=on-failure
+RestartSec=2
+RestartPreventExitStatus=2
+
+[Install]
+WantedBy=default.target
